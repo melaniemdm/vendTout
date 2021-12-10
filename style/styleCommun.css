@@ -11,9 +11,14 @@
 
 #imgHeader {
   background-image: url("/pictures/ventMe.jpg");
-  width: 200%;
+  width: 100%;
   height: 500px;
   background-size: cover;
+}
+
+.cardVendre {
+  margin: 0;
+  height: 100%;
 }
 
 .titleVendre h2 {
@@ -31,8 +36,8 @@
 }
 
 .modal1 {
+  margin-left: 25px;
   width: 20%;
-  margin-top: -300px;
   transition: 0.5s;
   display: flex;
   justify-content: center;
