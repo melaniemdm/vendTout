@@ -9,6 +9,10 @@
   width: 150px;
 }
 
+.buttonInsc button {
+  margin: 15px;
+}
+
 #imgHeader {
   background-image: url("/pictures/ventMe.jpg");
   width: 100%;
