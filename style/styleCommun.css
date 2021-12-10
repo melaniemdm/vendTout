@@ -4,8 +4,43 @@
 /*vue tablette*/
 /*vue desktop*/
 /*création des variables media queries utilisant les breakpoints*/
+/* Pour centrer les elements*/
 .logo img {
   width: 150px;
+}
+
+#imgHeader {
+  background-image: url("/pictures/ventMe.jpg");
+  width: 200%;
+  height: 500px;
+  background-size: cover;
+}
+
+.titleVendre h2 {
+  display: flex;
+  text-align: center;
+}
+
+.vendre {
+  display: flex;
+  flex-direction: column;
+}
+
+.vendre button {
+  margin: 10px;
+}
+
+.modal1 {
+  width: 20%;
+  margin-top: -300px;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal1:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 @media only screen and (max-width: 767px) {

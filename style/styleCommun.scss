@@ -1,8 +1,45 @@
 @import "responsive.scss";
 
+/* Pour centrer les elements*/
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .logo img{
   width: 150px;
 }
+#imgHeader{
+  background-image: url("/pictures/ventMe.jpg");
+  width: 200%;
+  height: 500px;
+  background-size: cover;
+}
+
+.titleVendre h2{
+  display: flex;
+  text-align: center;
+}
+.vendre {
+  display: flex;
+  flex-direction: column;
+ }
+ .vendre button{
+   margin: 10px;
+ }
+.modal1{
+  width:20%;
+  margin-top: -300px;
+  transition:0.5s;
+ @include center;
+
+ &:hover{
+ transform: scale(1.1);
+transition:0.5s ;
+ }
+}
+
+
 @media #{$small-down} {
 .connexion button, .choixLangues {
  margin-top: 10px;
