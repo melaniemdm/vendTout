@@ -5,7 +5,7 @@
 <head>
     <!--pour l'encodage, caracteres speciaux-->
     <meta charset="utf-8" />
-    
+
     <!--lien vers les icones font awesome-->
     <script src="https://kit.fontawesome.com/08a19f859e.js" crossorigin="anonymous">
     </script>
@@ -13,68 +13,120 @@
     <link
         href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
         rel="stylesheet" />
-       <!--pour devtool et compatibilité responsive-->
+    <!--pour devtool et compatibilité responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--lien vers tailwind-->
     <link href="https://melaniemdm.github.io/oc_librairies/tailwindcss-2.2.7-dist/tailwind.min.css" rel="stylesheet">
-    
+
     <!--lien vers le fichier css-->
     <link rel="stylesheet" href="style/styleCommun.css" />
     <!--titre de l'onglet-->
     <title>VendTout</title>
-    </head>
+</head>
 
 <body>
-<header>
-<!-- menu de navigation     -->
-    <nav class="bg-white shadow dark:bg-gray-800">
-        <div class="container px-6 py-3 mx-auto md:flex">
-            <div class="flex items-center justify-between">
-                <div class="logo">
-                    <img  src="pictures/logo.png" alt="logo VendTout">
-                </div>
-                
-                <!-- Mobile menu button -->
-                <div class="flex md:hidden">
-                    <button type="button" class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
-                        <svg  class="w-6 h-6 fill-current">
-                            <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-            <div class="w-full md:flex md:items-center md:justify-between">
-                <div class="flex flex-col px-2 py-3 -mx-4 md:flex-row md:mx-0 md:py-0">
-                    <a href="#" class="px-2 py-1 text-sm font-medium text-blue-400 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-blue-400 hover:text-gray-100 md:mx-2">Home</a>
-                    <a href="#" class="px-2 py-1 text-sm font-medium text-blue-400 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-blue-400 hover:text-gray-100 md:mx-2">Qui sommes nous?</a>
-                    <a href="#" class="px-2 py-1 text-sm font-medium text-blue-400 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-blue-400 hover:text-gray-100 md:mx-2">Contact</a>
-                </div>
-                <div class="connection">
-                    <button class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300" aria-label="inscription">S'inscrire</button>
-                    <button class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300" aria-label="se connecter">Se connecter</button>
+    <header>
+        <!-- menu de navigation     -->
+        <nav class="bg-white shadow dark:bg-gray-800">
+            <div class="container px-6 py-3 mx-auto md:flex">
+                <div class="flex items-center justify-between">
+                    <div class="logo">
+                        <img src="pictures/logo.png" alt="logo VendTout">
                     </div>
-                <div class="relative">
-                    <span class="absolute inset-y-0 left-0 flex items-center pl-3">
-                        <svg class="w-5 h-5 text-gray-400"  fill="none">
-                            <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </span>
 
-                    <input type="text" class="w-full py-3 pl-10 pr-4 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" placeholder="Search" aria-label="rechercher">
+                    <!-- Mobile menu button -->
+                    <div class="flex md:hidden">
+                        <button type="button"
+                            class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+                            aria-label="toggle menu">
+                            <svg class="w-6 h-6 fill-current">
+                                <path fill-rule="evenodd"
+                                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+                <div class="w-full md:flex md:items-center md:justify-between">
+                    <div class="flex flex-col px-2 py-3 -mx-4 md:flex-row md:mx-0 md:py-0">
+                        <a href="#"
+                            class="px-2 py-1 text-sm font-medium text-blue-400 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-blue-400 hover:text-gray-100 md:mx-2">Home</a>
+                        <a href="#"
+                            class="px-2 py-1 text-sm font-medium text-blue-400 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-blue-400 hover:text-gray-100 md:mx-2">Qui
+                            sommes nous?</a>
+                        <a href="#"
+                            class="px-2 py-1 text-sm font-medium text-blue-400 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-blue-400 hover:text-gray-100 md:mx-2">Contact</a>
+                    </div>
+                    <!-- connection -->
+                    <div class="connection">
+                        <button
+                            class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                            aria-label="inscription">S'inscrire</button>
+                        <button
+                            class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                            aria-label="se connecter">Se connecter</button>
+                    </div>
+                    <!-- choix langues -->
+                    <div class="choixLangues">
+                        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+                            defer></script>
+                        <div class="flex justify-center ">
+                            <div x-data="{ dropdownOpen: true }" class="relative">
+                                <button @click="dropdownOpen = !dropdownOpen"
+                                    class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300">FR
+                                </button>
+
+                                <div x-show="dropdownOpen" @click="dropdownOpen = false"
+                                    class="fixed inset-0 h-full w-full z-10"></div>
+
+                                <div x-show="dropdownOpen"
+                                    class="absolute right-0 mt-2 w-48 bg-white rounded-md overflow-hidden shadow-xl z-20">
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-800 border-b hover:bg-gray-200">small
+                                    </a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-800 border-b hover:bg-gray-200">medium
+                                    </a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-800 border-b hover:bg-gray-200">large
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- recherche -->
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                            <svg class="w-5 h-5 text-gray-400" fill="none">
+                                <path
+                                    d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </span>
+
+                        <input type="text"
+                            class="w-full py-3 pl-10 pr-4 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"
+                            placeholder="Search" aria-label="rechercher">
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </nav>
-    
-</header>
-<!---->
+        </nav>
+
+    </header>
+    <!---->
 
 
-<!-- appel du fichier js ---->
-<script type="module" src=" fichier.js"></script>
-    
+
+
+
+
+    <!-- appel du fichier js ---->
+    <script type="module" src=" fichier.js"></script>
+
 
 </body>
 
