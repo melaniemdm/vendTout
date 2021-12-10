@@ -1,3 +1,14 @@
+@import "responsive.scss";
+
 .logo img{
   width: 150px;
+}
+@media #{$small-down} {
+.connexion button, .choixLangues {
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+.choixLangues{
+  position:relative;
+}
 }
