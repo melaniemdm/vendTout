@@ -62,4 +62,8 @@
   .choixLangues {
     position: relative;
   }
+}
+.produitFirstTitle {
+  font-size: 30px;
+  margin: 20px;
 }/*# sourceMappingURL=styleCommun.css.map */
