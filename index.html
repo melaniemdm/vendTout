@@ -15,6 +15,8 @@
         rel="stylesheet" />
     <!--pour devtool et compatibilité responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--lien vers normalize-->
+    <link href="https://melaniemdm.github.io/oc_librairies/normalize-8.0.1/normalize.css" rel="stylesheet">
     <!--lien vers tailwind-->
     <link href="https://melaniemdm.github.io/oc_librairies/tailwindcss-2.2.7-dist/tailwind.min.css" rel="stylesheet">
 
@@ -84,13 +86,13 @@
                                 <div x-show="dropdownOpen"
                                     class="absolute right-0 mt-2 w-48 bg-white rounded-md overflow-hidden shadow-xl z-20">
                                     <a href="#"
-                                        class="block px-4 py-2 text-sm text-gray-800 border-b hover:bg-gray-200">small
+                                        class="block px-4 py-2 text-sm text-gray-800 border-b hover:bg-gray-200">English
                                     </a>
                                     <a href="#"
-                                        class="block px-4 py-2 text-sm text-gray-800 border-b hover:bg-gray-200">medium
+                                        class="block px-4 py-2 text-sm text-gray-800 border-b hover:bg-gray-200">Espagnol
                                     </a>
                                     <a href="#"
-                                        class="block px-4 py-2 text-sm text-gray-800 border-b hover:bg-gray-200">large
+                                        class="block px-4 py-2 text-sm text-gray-800 border-b hover:bg-gray-200">Chinois
                                     </a>
                                 </div>
                             </div>
@@ -138,109 +140,715 @@
             </div>
         </div>
     </div>
-<!-- produits les plus demandés -->
-<div class="produitFirst">
-  <h2 class="px-2 py-1 text-sm font-medium text-blue-400 transition-colors duration-200 transform rounded dark:text-gray-200 md:mx-2 produitFirstTitle"> Top 5 des produits les plus demandés</h2> 
-<!-- UI card from https://uxplanet.org/ultimate-guide-for-designing-ui-cards-59488a91b44f -->
 
-    <div class="relative m-3 flex flex-wrap mx-auto justify-center">
-  
-      <div class="relative max-w-sm min-w-[340px] bg-white shadow-md rounded-3xl p-2 mx-1 my-3 cursor-pointer">
-        <div class="overflow-x-hidden rounded-2xl relative">
-          <img class="h-40 rounded-2xl w-full object-cover" src="https://pixahive.com/wp-content/uploads/2020/10/Gym-shoes-153180-pixahive.jpg">
-          <p class="absolute right-2 top-2 bg-white rounded-full p-2 cursor-pointer group">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-50 opacity-70" fill="none" stroke="black">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
-          </p>
-        </div>
-        <div class="mt-4 pl-2 mb-2 flex justify-between ">
-          <div>
-            <p class="text-lg font-semibold text-gray-900 mb-0">Product Name</p>
-            <p class="text-md text-gray-800 mt-0">$340</p>
-          </div>
-          <div class="flex flex-col-reverse mb-1 mr-4 group cursor-pointer">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-70" fill="none" stroke="gray">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-            </svg>
-          </div>
-        </div>
-      </div>
-  
-      <div class="relative max-w-sm min-w-[340px] bg-white shadow-md rounded-3xl p-2 mx-1 my-3 cursor-pointer">
-        <div class="overflow-x-hidden rounded-2xl relative">
-          <img class="h-40 rounded-2xl w-full object-cover" src="https://pixahive.com/wp-content/uploads/2020/10/Gym-shoes-153180-pixahive.jpg">
-          <p class="absolute right-2 top-2 bg-white rounded-full p-2 cursor-pointer group">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-50 opacity-70" fill="none" stroke="black">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
-          </p>
-        </div>
-        <div class="mt-4 pl-2 mb-2 flex justify-between ">
-          <div>
-            <p class="text-lg font-semibold text-gray-900 mb-0">Product Name</p>
-            <p class="text-md text-gray-800 mt-0">$340</p>
-          </div>
-          <div class="flex flex-col-reverse mb-1 mr-4 group cursor-pointer">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-70" fill="none" stroke="gray">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-            </svg>
-          </div>
-        </div>
-      </div>
+    <!-- produits les plus demandés -->
+    <div class="produitFirst">
+        <h2
+            class="px-2 py-1 text-sm font-medium text-blue-400 transition-colors duration-200 transform rounded dark:text-gray-200 md:mx-2 produitFirstTitle">
+            Top 5 des produits les plus demandés</h2>
+        <!-- UI card from https://uxplanet.org/ultimate-guide-for-designing-ui-cards-59488a91b44f -->
 
-      <div class="relative max-w-sm min-w-[340px] bg-white shadow-md rounded-3xl p-2 mx-1 my-3 cursor-pointer">
-        <div class="overflow-x-hidden rounded-2xl relative">
-          <img class="h-40 rounded-2xl w-full object-cover" src="https://pixahive.com/wp-content/uploads/2020/10/Gym-shoes-153180-pixahive.jpg">
-          <p class="absolute right-2 top-2 bg-white rounded-full p-2 cursor-pointer group">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-50 opacity-70" fill="none" stroke="black">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
-          </p>
-        </div>
-        <div class="mt-4 pl-2 mb-2 flex justify-between ">
-          <div>
-            <p class="text-lg font-semibold text-gray-900 mb-0">Product Name</p>
-            <p class="text-md text-gray-800 mt-0">$340</p>
-          </div>
-          <div class="flex flex-col-reverse mb-1 mr-4 group cursor-pointer">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-70" fill="none" stroke="gray">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-            </svg>
-          </div>
-        </div>
-      </div>
+        <div class="relative m-3 flex flex-wrap mx-auto justify-center">
 
-      <div class="relative max-w-sm min-w-[340px] bg-white shadow-md rounded-3xl p-2 mx-1 my-3 cursor-pointer">
-        <div class="overflow-x-hidden rounded-2xl relative">
-          <img class="h-40 rounded-2xl w-full object-cover" src="https://pixahive.com/wp-content/uploads/2020/10/Gym-shoes-153180-pixahive.jpg">
-          <p class="absolute right-2 top-2 bg-white rounded-full p-2 cursor-pointer group">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-50 opacity-70" fill="none"  stroke="black">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
-          </p>
+            <div class="relative max-w-sm min-w-[340px] bg-white shadow-md rounded-3xl p-2 mx-1 my-3 cursor-pointer">
+                <div class="overflow-x-hidden rounded-2xl relative">
+                    <img class="h-40 rounded-2xl w-full object-cover"
+                        src="https://pixahive.com/wp-content/uploads/2020/10/Gym-shoes-153180-pixahive.jpg">
+                    <p class="absolute right-2 top-2 bg-white rounded-full p-2 cursor-pointer group">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-50 opacity-70"
+                            fill="none" stroke="black">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </p>
+                </div>
+                <div class="mt-4 pl-2 mb-2 flex justify-between ">
+                    <div>
+                        <p class="text-lg font-semibold text-gray-900 mb-0">Product Name</p>
+                        <p class="text-md text-gray-800 mt-0">$340</p>
+                    </div>
+                    <div class="flex flex-col-reverse mb-1 mr-4 group cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-70" fill="none"
+                            stroke="gray">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative max-w-sm min-w-[340px] bg-white shadow-md rounded-3xl p-2 mx-1 my-3 cursor-pointer">
+                <div class="overflow-x-hidden rounded-2xl relative">
+                    <img class="h-40 rounded-2xl w-full object-cover"
+                        src="https://pixahive.com/wp-content/uploads/2020/10/Gym-shoes-153180-pixahive.jpg">
+                    <p class="absolute right-2 top-2 bg-white rounded-full p-2 cursor-pointer group">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-50 opacity-70"
+                            fill="none" stroke="black">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </p>
+                </div>
+                <div class="mt-4 pl-2 mb-2 flex justify-between ">
+                    <div>
+                        <p class="text-lg font-semibold text-gray-900 mb-0">Product Name</p>
+                        <p class="text-md text-gray-800 mt-0">$340</p>
+                    </div>
+                    <div class="flex flex-col-reverse mb-1 mr-4 group cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-70" fill="none"
+                            stroke="gray">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative max-w-sm min-w-[340px] bg-white shadow-md rounded-3xl p-2 mx-1 my-3 cursor-pointer">
+                <div class="overflow-x-hidden rounded-2xl relative">
+                    <img class="h-40 rounded-2xl w-full object-cover"
+                        src="https://pixahive.com/wp-content/uploads/2020/10/Gym-shoes-153180-pixahive.jpg">
+                    <p class="absolute right-2 top-2 bg-white rounded-full p-2 cursor-pointer group">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-50 opacity-70"
+                            fill="none" stroke="black">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </p>
+                </div>
+                <div class="mt-4 pl-2 mb-2 flex justify-between ">
+                    <div>
+                        <p class="text-lg font-semibold text-gray-900 mb-0">Product Name</p>
+                        <p class="text-md text-gray-800 mt-0">$340</p>
+                    </div>
+                    <div class="flex flex-col-reverse mb-1 mr-4 group cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-70" fill="none"
+                            stroke="gray">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative max-w-sm min-w-[340px] bg-white shadow-md rounded-3xl p-2 mx-1 my-3 cursor-pointer">
+                <div class="overflow-x-hidden rounded-2xl relative">
+                    <img class="h-40 rounded-2xl w-full object-cover"
+                        src="https://pixahive.com/wp-content/uploads/2020/10/Gym-shoes-153180-pixahive.jpg">
+                    <p class="absolute right-2 top-2 bg-white rounded-full p-2 cursor-pointer group">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-50 opacity-70"
+                            fill="none" stroke="black">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </p>
+                </div>
+                <div class="mt-4 pl-2 mb-2 flex justify-between ">
+                    <div>
+                        <p class="text-lg font-semibold text-gray-900 mb-0">Product Name</p>
+                        <p class="text-md text-gray-800 mt-0">$340</p>
+                    </div>
+                    <div class="flex flex-col-reverse mb-1 mr-4 group cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-70" fill="none"
+                            stroke="gray">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="mt-4 pl-2 mb-2 flex justify-between ">
-          <div>
-            <p class="text-lg font-semibold text-gray-900 mb-0">Product Name</p>
-            <p class="text-md text-gray-800 mt-0">$340</p>
-          </div>
-          <div class="flex flex-col-reverse mb-1 mr-4 group cursor-pointer">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-70" fill="none" stroke="gray">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-            </svg>
-          </div>
-        </div>
-      </div>
-  
     </div>
+    <!-- section par marque -->
+    <section>
+        <h2
+            class="px-2 py-1 text-sm font-medium text-blue-400 transition-colors duration-200 transform rounded dark:text-gray-200 md:mx-2 marqueTitle">
+            Rechercher par marque</h2>
+        <div class="flex flex-col md:flex-row md:mx-5 md:py-5 btnMarque">
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Kenzo">Kenzo</div>
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Vertbaudet">Vertbaudet</div>
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Dior">Dior</div>
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Cache cache">Cache cache</div>
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Morgan">Morgan</div>
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Petit bateau">Petit bateau</div>
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Caroll">Caroll</div>
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Cyrillus">Cyrillus</div>
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Diesel">Diesel</div>
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Jordan">Jordan</div>
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Bershka">Bershka</div>
 
+        </div>
+
+    </section>
+    <!-- section suggestions -->
+    <section>
+        <h2
+            class="px-2 py-1 text-sm font-medium text-blue-400 transition-colors duration-200 transform rounded dark:text-gray-200 md:mx-2 suggestionsTitle">
+            Suggestions de recherche</h2>
+        <div class="flex flex-col md:flex-row md:mx-5 md:py-5 btnSuggestions">
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Nike chaussures">Nike chaussures
+                <div class="vues" aria-label="nombrte de vues">3.79M vues </div>
+            </div>
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Dr.Martens chaussures">Dr.Martens chaussures
+                <div class="vues" aria-label="nombre de vues">501K vues </div>
+            </div>
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Nike vêtements">Nike vêtements
+                <div class="vues" aria-label="nombre de vues">2.84M vues </div>
+            </div>
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Nike">Nike
+                <div class="vues" aria-label="nombre de vues">11.1M vues </div>
+            </div>
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Jott vêtements">Jott vêtements
+                <div class="vues" aria-label="nombre de vues">312K vues </div>
+            </div>
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Zara">Zara
+                <div class="vues" aria-label="nombre de vues">10.1M vues </div>
+            </div>
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Lacoste">Lacoste
+                <div class="vues" aria-label="nombre de vues">32.49M vues </div>
+            </div>
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="The North Face">The North Face
+                <div class="vues" aria-label="nombre de vues">1.69M vues </div>
+            </div>
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Ralph Lauren">Ralph Lauren
+                <div class="vues" aria-label="nombre de vues">1.8M vues </div>
+            </div>
+            <div class="p-2 pl-5 pr-5 bg-transparent border-2 border-blue-400 text-blue-400 text-sm rounded-lg hover:bg-blue-500 hover:text-gray-200 focus:border-4 focus:border-blue-300"
+                aria-label="Jeux & Jouets">Jeux & Jouets
+                <div class="vues" aria-label="nombre de vues">325.6M vues </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- section fil d'actualité -->
+    <section class="actualite">
+        <h2
+            class="px-2 py-1 text-sm font-medium text-blue-400 transition-colors duration-200 transform rounded dark:text-gray-200 md:mx-2 actualiteTitle">
+            Fil d'actualité</h2>
+        <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800 cardActualite">
+
+            <div class="flex justify-center -mt-16 md:justify-end">
+                <img class="object-cover w-10 h-10 border-2 border-blue-500 rounded-full dark:border-blue-400"
+                    alt="Testimonial avatar"
+                    src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80">
+            </div>
+
+            <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
+                    style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)">
+                </div>
+
+                <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Nike
+                        Revolt
+                    </h3>
+
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <div class="firstPartieCard">
+                            <div class="font-bold text-gray-800 dark:text-gray-200">$129</div>
+                            <div class="infoSupp">L/40/10 </div>
+                        </div>
+                        <div class="IconCard">
+                            <img
+                                src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-like-instagram-flatart-icons-outline-flatarticons.png" />
+                            <img src="https://img.icons8.com/pastel-glyph/64/000000/information--v1.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+
+            <div class="flex justify-center -mt-16 md:justify-end">
+                <img class="object-cover w-10 h-10 border-2 border-blue-500 rounded-full dark:border-blue-400"
+                    alt="Testimonial avatar"
+                    src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80">
+            </div>
+
+            <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
+                    style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)">
+                </div>
+
+                <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Nike
+                        Revolt
+                    </h3>
+
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <div class="firstPartieCard">
+                            <div class="font-bold text-gray-800 dark:text-gray-200">$129</div>
+                            <div class="infoSupp">L/40/10 </div>
+                        </div>
+                        <div class="IconCard">
+                            <img
+                                src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-like-instagram-flatart-icons-outline-flatarticons.png" />
+                            <img src="https://img.icons8.com/pastel-glyph/64/000000/information--v1.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+
+            <div class="flex justify-center -mt-16 md:justify-end">
+                <img class="object-cover w-10 h-10 border-2 border-blue-500 rounded-full dark:border-blue-400"
+                    alt="Testimonial avatar"
+                    src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80">
+            </div>
+
+            <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
+                    style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)">
+                </div>
+
+                <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Nike
+                        Revolt
+                    </h3>
+
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <div class="firstPartieCard">
+                            <div class="font-bold text-gray-800 dark:text-gray-200">$129</div>
+                            <div class="infoSupp">L/40/10 </div>
+                        </div>
+                        <div class="IconCard">
+                            <img
+                                src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-like-instagram-flatart-icons-outline-flatarticons.png" />
+                            <img src="https://img.icons8.com/pastel-glyph/64/000000/information--v1.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+
+            <div class="flex justify-center -mt-16 md:justify-end">
+                <img class="object-cover w-10 h-10 border-2 border-blue-500 rounded-full dark:border-blue-400"
+                    alt="Testimonial avatar"
+                    src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80">
+            </div>
+
+            <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
+                    style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)">
+                </div>
+
+                <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Nike
+                        Revolt
+                    </h3>
+
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <div class="firstPartieCard">
+                            <div class="font-bold text-gray-800 dark:text-gray-200">$129</div>
+                            <div class="infoSupp">L/40/10 </div>
+                        </div>
+                        <div class="IconCard">
+                            <img
+                                src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-like-instagram-flatart-icons-outline-flatarticons.png" />
+                            <img src="https://img.icons8.com/pastel-glyph/64/000000/information--v1.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+
+            <div class="flex justify-center -mt-16 md:justify-end">
+                <img class="object-cover w-10 h-10 border-2 border-blue-500 rounded-full dark:border-blue-400"
+                    alt="Testimonial avatar"
+                    src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80">
+            </div>
+
+            <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
+                    style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)">
+                </div>
+
+                <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Nike
+                        Revolt
+                    </h3>
+
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <div class="firstPartieCard">
+                            <div class="font-bold text-gray-800 dark:text-gray-200">$129</div>
+                            <div class="infoSupp">L/40/10 </div>
+                        </div>
+                        <div class="IconCard">
+                            <img
+                                src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-like-instagram-flatart-icons-outline-flatarticons.png" />
+                            <img src="https://img.icons8.com/pastel-glyph/64/000000/information--v1.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+
+            <div class="flex justify-center -mt-16 md:justify-end">
+                <img class="object-cover w-10 h-10 border-2 border-blue-500 rounded-full dark:border-blue-400"
+                    alt="Testimonial avatar"
+                    src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80">
+            </div>
+
+            <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
+                    style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)">
+                </div>
+
+                <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Nike
+                        Revolt
+                    </h3>
+
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <div class="firstPartieCard">
+                            <div class="font-bold text-gray-800 dark:text-gray-200">$129</div>
+                            <div class="infoSupp">L/40/10 </div>
+                        </div>
+                        <div class="IconCard">
+                            <img
+                                src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-like-instagram-flatart-icons-outline-flatarticons.png" />
+                            <img src="https://img.icons8.com/pastel-glyph/64/000000/information--v1.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+
+            <div class="flex justify-center -mt-16 md:justify-end">
+                <img class="object-cover w-10 h-10 border-2 border-blue-500 rounded-full dark:border-blue-400"
+                    alt="Testimonial avatar"
+                    src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80">
+            </div>
+
+            <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
+                    style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)">
+                </div>
+
+                <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Nike
+                        Revolt
+                    </h3>
+
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <div class="firstPartieCard">
+                            <div class="font-bold text-gray-800 dark:text-gray-200">$129</div>
+                            <div class="infoSupp">L/40/10 </div>
+                        </div>
+                        <div class="IconCard">
+                            <img
+                                src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-like-instagram-flatart-icons-outline-flatarticons.png" />
+                            <img src="https://img.icons8.com/pastel-glyph/64/000000/information--v1.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+
+            <div class="flex justify-center -mt-16 md:justify-end">
+                <img class="object-cover w-10 h-10 border-2 border-blue-500 rounded-full dark:border-blue-400"
+                    alt="Testimonial avatar"
+                    src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80">
+            </div>
+
+            <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
+                    style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)">
+                </div>
+
+                <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Nike
+                        Revolt
+                    </h3>
+
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <div class="firstPartieCard">
+                            <div class="font-bold text-gray-800 dark:text-gray-200">$129</div>
+                            <div class="infoSupp">L/40/10 </div>
+                        </div>
+                        <div class="IconCard">
+                            <img
+                                src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-like-instagram-flatart-icons-outline-flatarticons.png" />
+                            <img src="https://img.icons8.com/pastel-glyph/64/000000/information--v1.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+
+            <div class="flex justify-center -mt-16 md:justify-end">
+                <img class="object-cover w-10 h-10 border-2 border-blue-500 rounded-full dark:border-blue-400"
+                    alt="Testimonial avatar"
+                    src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80">
+            </div>
+
+            <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
+                    style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)">
+                </div>
+
+                <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Nike
+                        Revolt
+                    </h3>
+
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <div class="firstPartieCard">
+                            <div class="font-bold text-gray-800 dark:text-gray-200">$129</div>
+                            <div class="infoSupp">L/40/10 </div>
+                        </div>
+                        <div class="IconCard">
+                            <img
+                                src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-like-instagram-flatart-icons-outline-flatarticons.png" />
+                            <img src="https://img.icons8.com/pastel-glyph/64/000000/information--v1.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+
+            <div class="flex justify-center -mt-16 md:justify-end">
+                <img class="object-cover w-10 h-10 border-2 border-blue-500 rounded-full dark:border-blue-400"
+                    alt="Testimonial avatar"
+                    src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80">
+            </div>
+
+            <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+                <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
+                    style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)">
+                </div>
+
+                <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                    <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Nike
+                        Revolt
+                    </h3>
+
+                    <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <div class="firstPartieCard">
+                            <div class="font-bold text-gray-800 dark:text-gray-200">$129</div>
+                            <div class="infoSupp">L/40/10 </div>
+                        </div>
+                        <div class="IconCard">
+                            <img
+                                src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-like-instagram-flatart-icons-outline-flatarticons.png" />
+                            <img src="https://img.icons8.com/pastel-glyph/64/000000/information--v1.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section>
+    <h2
+    class="px-2 py-1 text-sm font-medium text-blue-400 transition-colors duration-200 transform rounded dark:text-gray-200 md:mx-2 vitrineTitle">
+    Dressings en Vitrine</h2>
+          
+
+        <div class="w-2/3 p-4 md:p-4 dressingCard">
+            <div class="flex ">
+                <img class="object-cover w-20 h-20 border-2 border-blue-500 rounded-full dark:border-blue-400"
+                    alt="Testimonial avatar"
+                    src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80">
+            </div>
+            <h1 class="text-2xl font-bold text-gray-800 dark:text-white">Backpack</h1>
+
+            <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit In odit</p>
+
+            <div class="flex mt-2 item-center">
+                <svg class="w-5 h-5 text-yellow-400 fill-current" >
+                    <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"/>
+                </svg>
+
+                <svg class="w-5 h-5 text-yellow-400 fill-current" >
+                    <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"/>
+                </svg>
+
+                <svg class="w-5 h-5 text-yellow-400 fill-current" >
+                    <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"/>
+                </svg>
+
+                <svg class="w-5 h-5 text-gray-400 fill-current" >
+                    <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"/>
+                </svg>
+
+                <svg class="w-5 h-5 text-gray-400 fill-current" >
+                    <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"/>
+                </svg>
+            </div>
+       </div>
+       <!-- dressing --><div class="vitrine">
+       <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+        <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
+            style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)">
+        </div>
+        <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+            <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Nike
+                Revolt
+            </h3>
+
+            <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                <div class="firstPartieCard">
+                    <div class="font-bold text-gray-800 dark:text-gray-200">$129</div>
+                    <div class="infoSupp">L/40/10 </div>
+                </div>
+                <div class="IconCard">
+                    <img
+                        src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-like-instagram-flatart-icons-outline-flatarticons.png" />
+                    <img src="https://img.icons8.com/pastel-glyph/64/000000/information--v1.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+        <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
+            style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)">
+        </div>
+        <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+            <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Nike
+                Revolt
+            </h3>
+
+            <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                <div class="firstPartieCard">
+                    <div class="font-bold text-gray-800 dark:text-gray-200">$129</div>
+                    <div class="infoSupp">L/40/10 </div>
+                </div>
+                <div class="IconCard">
+                    <img
+                        src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-like-instagram-flatart-icons-outline-flatarticons.png" />
+                    <img src="https://img.icons8.com/pastel-glyph/64/000000/information--v1.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+        <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
+            style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)">
+        </div>
+        <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+            <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Nike
+                Revolt
+            </h3>
+
+            <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                <div class="firstPartieCard">
+                    <div class="font-bold text-gray-800 dark:text-gray-200">$129</div>
+                    <div class="infoSupp">L/40/10 </div>
+                </div>
+                <div class="IconCard">
+                    <img
+                        src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-like-instagram-flatart-icons-outline-flatarticons.png" />
+                    <img src="https://img.icons8.com/pastel-glyph/64/000000/information--v1.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+        <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
+            style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)">
+        </div>
+        <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+            <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Nike
+                Revolt
+            </h3>
+
+            <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                <div class="firstPartieCard">
+                    <div class="font-bold text-gray-800 dark:text-gray-200">$129</div>
+                    <div class="infoSupp">L/40/10 </div>
+                </div>
+                <div class="IconCard">
+                    <img
+                        src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-like-instagram-flatart-icons-outline-flatarticons.png" />
+                    <img src="https://img.icons8.com/pastel-glyph/64/000000/information--v1.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
+        <div class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"
+            style="background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)">
+        </div>
+        <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+            <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">Nike
+                Revolt
+            </h3>
+
+            <div class="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                <div class="firstPartieCard">
+                    <div class="font-bold text-gray-800 dark:text-gray-200">$129</div>
+                    <div class="infoSupp">L/40/10 </div>
+                </div>
+                <div class="IconCard">
+                    <img
+                        src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-like-instagram-flatart-icons-outline-flatarticons.png" />
+                    <img src="https://img.icons8.com/pastel-glyph/64/000000/information--v1.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="suivantIcon ">
+        <img src="https://img.icons8.com/fluency-systems-filled/48/000000/long-arrow-right.png"/>
+</div>
 </div>
 
+</section>
 
 
+<footer class="flex justify-center px-4 text-gray-800 bg-white dark:text-white dark:bg-gray-800">
+    <div class="container py-6">
+        <div class="flex flex-col items-center justify-between mt-6 md:flex-row">
+            <div class="logo">
+                <img src="pictures/logo.png" alt="logo VendTout">
+            </div>
+
+            <div class="flex mt-4 md:m-0">
+                <div class="-mx-4">
+                    <a href="#" class="px-4 text-sm font-medium text-blue-400 dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-400 hover:underline">Home</a>
+                    <a href="#" class="px-4 text-sm font-medium text-blue-400 dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-400 hover:underline">Qui sommes nous?</a>
+                    <a href="#" class="px-4 text-sm font-medium text-blue-400 dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-400 hover:underline">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
     <!-- appel du fichier js ---->
-    <script type="module" src=" fichier.js"></script>
+    <script type="module" src="./javaScript/fichier.js"></script>
 
 
 </body>

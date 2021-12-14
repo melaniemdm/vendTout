@@ -63,7 +63,52 @@
     position: relative;
   }
 }
-.produitFirstTitle {
+.produitFirstTitle, .suggestionsTitle, .actualiteTitle, .marqueTitle, .vitrineTitle {
   font-size: 30px;
   margin: 20px;
+}
+
+.btnMarque, .btnSuggestions {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.btnMarque div, .btnSuggestions div {
+  margin-right: 20px;
+}
+
+section, footer {
+  margin-top: 50px;
+}
+
+.vues {
+  color: #bdb8b8;
+  font-size: small;
+  font-style: italic;
+}
+
+.IconCard img {
+  width: 20px;
+}
+
+.infoSupp {
+  font-style: italic;
+}
+
+.actualite, .vitrine {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.vitrine {
+  align-items: center;
+}
+
+.actualiteTitle {
+  width: 100%;
+}
+
+.dressingCard {
+  margin-left: 15px;
 }/*# sourceMappingURL=styleCommun.css.map */
