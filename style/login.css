@@ -111,4 +111,25 @@ section, footer {
 
 .dressingCard {
   margin-left: 15px;
-}/*# sourceMappingURL=styleCommun.css.map */
+}
+
+#imgLogin {
+  background-image: url("/pictures/inscription.jpg");
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.login {
+  position: fixed;
+  top: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardLogin {
+  width: 500px;
+}/*# sourceMappingURL=login.css.map */
