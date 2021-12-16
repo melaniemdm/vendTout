@@ -121,7 +121,7 @@ section, footer {
   opacity: 0.5;
 }
 
-.login {
+.login, .inscription {
   position: fixed;
   top: 200px;
   width: 100%;
